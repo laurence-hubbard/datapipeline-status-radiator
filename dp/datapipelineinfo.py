@@ -6,7 +6,7 @@ import subprocess
 import json
 
 class DataPipelineInfo:
-    def __init__(self, server, username, password, disable_ssl_check=True):
+    def __init__(self, disable_ssl_check=True):
         # Turn off SSL certificate checking. Bad!
         if disable_ssl_check:
             ssl._create_default_https_context = ssl._create_unverified_context
