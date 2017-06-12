@@ -3,7 +3,7 @@ import os
 from dp.datapipelineinfo import DataPipelineInfo
 
 disable_ssl = os.getenv('GOCD_DISABLE_SSL_CHECK', False)
-go = GoCrazy(url, username, password, disable_ssl)
+dp = DataPipelineInfo(disable_ssl)
 
 
 def application(env, start_response):
